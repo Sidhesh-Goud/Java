@@ -1,6 +1,6 @@
 import java.util.*;
 class Age{
-    public static void vote (int age){
+    public static void eligible (int age){
         if(age<18)
             throw new ArithmeticException("You are not eligible");
         else
@@ -9,6 +9,6 @@ class Age{
     public static void main(String args[])
     {
         Scanner sc = new Scanner(System.in);
-        vote(sc.nextInt());
+        eligible(sc.nextInt());
     }
 }
